@@ -11,7 +11,7 @@
     }
     
     //add nice to form class
-    $element['#attributes']['class'] = array('nice');
+    $element['#attributes']['class'][] = 'nice';
     
     // Anonymous DIV to satisfy XHTML compliance.
     return '<form' . drupal_attributes($element['#attributes']) . '><div>' . $element['#children'] . '</div></form>';
