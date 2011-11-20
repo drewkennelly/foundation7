@@ -86,11 +86,9 @@
 	    <?php if ($tabs): ?>
 	      <div class="tabs"><?php print render($tabs); ?></div>
 	    <?php endif; ?>
-	    <?php if (!$is_front): ?>
-	      <?php print render($title_prefix); ?>
-	      <h3><?php echo $title; ?></h3>
-	      <?php print render($title_suffix); ?>
-	    <?php endif; ?>
+      <?php print render($title_prefix); ?>
+        <h3><?php echo $title; ?></h3>
+      <?php print render($title_suffix); ?>
 	    <a id="main-content"></a>
 	    <?php echo render($page['content']); ?>
 		</div>
