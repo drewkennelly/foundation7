@@ -3,7 +3,6 @@ description = Base theme for Drupal 7 built using Foundation by Zurb
 core = 7.x
 engine = phptemplate
 
-regions[header] = Header
 regions[left] = Left
 regions[content] = Content
 regions[footer] = Footer

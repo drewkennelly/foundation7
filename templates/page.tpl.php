@@ -79,12 +79,7 @@
 	
 	<div class="row">
 	  <div class="two columns">
-	    <div id="navigation">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t(''))); ?>
-      </div>
-      <?php if ( $page['left'] ): ?>
-        <?php print render($page['left']); ?>
-      <?php endif; ?>
+      <?php print render($page['left']); ?>
 	  </div>
 		<div class="ten columns panel">
 		  <?php if ($breadcrumb): ?>
