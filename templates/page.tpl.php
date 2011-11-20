@@ -82,9 +82,6 @@
       <?php print render($page['left']); ?>
 	  </div>
 		<div class="ten columns panel">
-		  <?php if ($breadcrumb): ?>
-		    <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-		  <?php endif; ?>
 	    <?php echo $messages; ?>
 	    <?php if ($tabs): ?>
 	      <div class="tabs"><?php print render($tabs); ?></div>
