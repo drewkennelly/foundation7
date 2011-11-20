@@ -77,22 +77,11 @@
 		</div>
 	</div>
 	
-	<?php if ( $page['nav'] ): ?>
-		<div class="row">
-			<div class="twelve columns">
-				<?php echo render($page['nav']); ?>
-				<hr />
-			</div>
-		</div>
-	<?php endif; ?>
-	
 	<div class="row">
-	  <?php if ( $page['left'] ): ?>
-		  <div class="two columns sidebar">
-		    <?php echo render($page['left']); ?>
-		  </div>
-		<?php endif; ?>
-		<div class="<?php echo $main_class; ?> columns panel">
+	  <div class="two columns sidebar">
+	    <?php echo render($page['left']); ?>
+	  </div>
+		<div class="ten columns panel">
 		  <?php if ($breadcrumb): ?>
 		    <div id="breadcrumb"><?php print $breadcrumb; ?></div>
 		  <?php endif; ?>
