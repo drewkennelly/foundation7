@@ -77,7 +77,7 @@
 		</div>
 	</div>
 	
-	<?php if ( $nav ): ?>
+	<?php if ( $page['nav'] ): ?>
 		<div class="row">
 			<div class="twelve columns">
 				<?php echo render($page['nav']); ?>

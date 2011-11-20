@@ -40,11 +40,16 @@
  * @see template_preprocess_html()
  * @see template_process()
  */
+ 
+ //HTML attribute
+ $html_attr = 'xmlns="http://www.w3.org/1999/xhtml" xml:lang="'.$language->language.'" version="XHTML+RDFa 1.0" dir="'.$language->dir.'"'.$rdf_namespaces;
+ 
+  
 ?><!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 <?php print $body_classes; ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 <?php print $body_classes; ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9 <?php print $body_classes; ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="<?php print $body_classes; ?>" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 <?php print $classes; ?>" <?php print $html_attr; ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 <?php print $classes; ?>" <?php print $html_attr; ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 <?php print $classes; ?>" <?php print $html_attr; ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="<?php print $classes; ?>" <?php print $html_attr; ?>> <!--<![endif]-->
 <head profile="<?php print $grddl_profile; ?>">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -53,7 +58,7 @@
 	<?php echo $styles; ?>
   <?php echo $scripts; ?>
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
