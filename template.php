@@ -47,7 +47,11 @@
     $element['#attributes']['type'] = 'submit';
     element_set_attributes($element, array('id', 'name', 'value'));
   
-    $element['#attributes']['class'] = array('form-' . $element['#button_type'], 'blue', 'nice', 'button', 'radius');
+    $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+    $element['#attributes']['class'][] = 'blue';
+    $element['#attributes']['class'][] = 'nice';
+    $element['#attributes']['class'][] = 'button';
+    $element['#attributes']['class'][] = 'radius';
 
     if (!empty($element['#attributes']['disabled'])) {
       $element['#attributes']['class'][] = 'form-button-disabled';
