@@ -1,0 +1,16 @@
+name = Foundation
+description = Base theme for Drupal 7 built using Foundation by Zurb
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[nav] = Nav
+regions[left] = Left
+regions[content] = Content
+regions[footer] = Footer
+
+stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/app.css
+
+scripts[] = js/modernizr-2.0.6.js
+scripts[] = js/app.js
