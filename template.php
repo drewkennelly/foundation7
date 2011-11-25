@@ -106,3 +106,23 @@
 		}
 		return $output;
 	}
+	
+	
+	function foundation_menu_local_tasks(&$variables) {
+		$output = '';
+	
+		if (!empty($variables['primary'])) {
+			$variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+			$variables['primary']['#prefix'] .= '<dl class="tabs primary">';
+			$variables['primary']['#suffix'] = '</dl>';
+			$output .= drupal_render($variables['primary']);
+		}
+		if (!empty($variables['secondary'])) {
+			$variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
+			$variables['secondary']['#prefix'] .= '<dl class="tabs secondary">';
+			$variables['secondary']['#suffix'] = '</dl>';
+			$output .= drupal_render($variables['secondary']);
+		}
+	
+		return $output;
+	}
