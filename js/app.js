@@ -1,5 +1,5 @@
-jQuery(document).ready(function () {
-
+(function ($) {
+				
 	/* Use this js doc for all application specific JS */
 	
 	//close messages on click
@@ -8,5 +8,4 @@ jQuery(document).ready(function () {
 		return false;
 	});
 	
-	
-});
+})(jQuery);
