@@ -79,10 +79,10 @@
 	</div>
 	
 	<div class="row">
-	  <div class="two columns sidebar">
+	  <div class="three columns sidebar">
       <?php print render($page['left']); ?>
 	  </div>
-		<div class="ten columns panel">
+		<div class="nine columns">
       
 	    <?php echo $messages; ?>
       

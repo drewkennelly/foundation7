@@ -68,3 +68,21 @@ ul.menu li a.active {
 	height: auto; 
 }
 ul.menu li:first-child a.active { margin: 0; }
+
+
+
+
+
+/* Drupal ovverrides */
+ul li.leaf {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+ul.menu li {
+	margin: 0;
+}
+
+li.expanded, li.collapsed, li.leaf {
+	padding: 0;
+}
