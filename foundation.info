@@ -16,5 +16,7 @@ stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
 
 scripts[] = js/modernizr-2.0.6.js
+scripts[] = js/forms.jquery.js
 scripts[] = js/jquery.customforms.js
+scripts[] = js/jquery.placeholder.min.js
 scripts[] = js/app.js
