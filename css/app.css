@@ -32,7 +32,39 @@ ul.tabs li { display: block; width: auto; height: 30px; padding: 0; float: left;
 ul.tabs li a { display: block; width: auto; height: 29px; padding: 0px 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
 ul.tabs li a.active { background: #fff; border-width: 1px 1px 0px 1px; height: 30px; }
 
-.sidebar ul.menu { height: auto; }
-.sidebar ul.menu li { float: none; height: auto; }
-.sidebar ul.menu. li a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0px #ccc; border-width: 1px 1px 0px; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
-.sidebar ul.menu li a.active { height: auto; margin: 0; border-width: 1px 0px 0px; background: #fff; }
+ul.menu { height: auto; border-bottom: solid 1px #eee; }
+ul.menu li { float: none; height: auto; }
+ul.menu li a {
+	display: block;
+	width: auto; 
+	height: auto; 
+	padding: 15px 20px; 
+	line-height: 1; 
+	border: solid 0px #ccc; 
+	border-width: 1px 1px 0px; 
+	margin: 0; 
+	color: #555; 
+	background: #eee; 
+	font-size: 15px; 
+	font-size: 1.5rem; 
+	padding: 15px 20px; 
+	border: none; 
+	border-left: 1px solid #eee; 
+	border-right: 1px solid #eee; 
+	border-top: 1px solid #eee; 
+	background: #fff;
+}
+ul.menu li a.active { 
+	height: auto; 
+	margin: 0; 
+	border-width: 1px 0px 0px; 
+	background: #fff; 
+	border: none; 
+	background: #00a6fc; 
+	color: #fff; 
+	margin: 0; 
+	position: static; 
+	top: 0px; 
+	height: auto; 
+}
+ul.menu li:first-child a.active { margin: 0; }
