@@ -115,6 +115,9 @@
 			$variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
 			$variables['primary']['#prefix'] .= '<dl class="tabs primary">';
 			$variables['primary']['#suffix'] = '</dl>';
+			
+			print_r($variables['primary']);
+			
 			$output .= drupal_render($variables['primary']);
 		}
 		if (!empty($variables['secondary'])) {
