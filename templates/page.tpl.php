@@ -70,9 +70,10 @@
 <!-- container -->
 <div class="container">
 	
-	<div class="row">
+	<div class="row site-header">
 		<div class="twelve columns">
-			<h2><?php echo $site_name; ?> <small><?php echo $site_slogan; ?></small></h2>
+			<h1><?php echo $site_name; ?></h1>
+      <h4 class="subheader"><?php echo $site_slogan; ?></h4>
 			<hr />
 		</div>
 	</div>
@@ -82,10 +83,6 @@
       <?php print render($page['left']); ?>
 	  </div>
 		<div class="ten columns panel">
-    
-    	<?php if ($breadcrumb): ?>
-        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-      <?php endif; ?>
       
 	    <?php echo $messages; ?>
       
