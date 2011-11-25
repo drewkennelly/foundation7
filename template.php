@@ -102,8 +102,7 @@
 			else {
 				$output .= $messages[0];
 			}
-			$output .= "<a href='' class='close'>&times;</a>
-			</div>\n";
+			$output .= "</div>\n";
 		}
 		return $output;
 	}
