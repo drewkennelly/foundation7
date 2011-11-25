@@ -31,3 +31,8 @@ ul.tabs li:first-child { padding: 0 9px 0 0px; }
 ul.tabs li { display: block; width: auto; height: 30px; padding: 0; float: left; }
 ul.tabs li a { display: block; width: auto; height: 29px; padding: 0px 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
 ul.tabs li a.active { background: #fff; border-width: 1px 1px 0px 1px; height: 30px; }
+
+.sidebar ul.menu { height: auto; }
+.sidebar ul.tabs li { float: none; height: auto; }
+.sidebar ul.tabs. li a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0px #ccc; border-width: 1px 1px 0px; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
+.sidebar ul.tabs li a.active { height: auto; margin: 0; border-width: 1px 0px 0px; background: #fff; }
