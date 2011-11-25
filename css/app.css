@@ -18,3 +18,7 @@
 	list-style-type: disc;
 	list-style-position: inside;
 }
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {system.theme.css:112
+	border: 2px solid red !important;
+}
