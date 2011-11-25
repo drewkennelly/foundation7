@@ -7,11 +7,15 @@ regions[left] = Left
 regions[content] = Content
 regions[footer] = Footer
 
-stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/globals.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/grid.css
+stylesheets[all][] = css/ui.css
+stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
 
 scripts[] = js/modernizr-2.0.6.js
-
 scripts[] = js/forms.jquery.js
 scripts[] = js/jquery.customforms.js
 scripts[] = js/jquery.placeholder.min.js
