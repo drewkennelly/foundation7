@@ -4,6 +4,7 @@
 	
 	//close messages on click
 	$(".close").click(function(){
+		alert('test');
 		$(this).parent().remove();
 		return false;
 	});
