@@ -17,6 +17,16 @@
 	margin-top:15px;
 }
 
+.alert-box ul {
+	margin-bottom:0;
+	margin-left:5px;
+}
+
+.alert-box ul li {
+	margin-bottom: 0;
+	list-style-type: disc;
+	list-style-position: inside;
+}
 
 
 /* -----------------------------------------
