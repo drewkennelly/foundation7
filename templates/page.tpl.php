@@ -82,15 +82,25 @@
       <?php print render($page['left']); ?>
 	  </div>
 		<div class="ten columns panel">
+    
+    	<?php if ($breadcrumb): ?>
+        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      <?php endif; ?>
+      
 	    <?php echo $messages; ?>
+      
 	    <?php if ($tabs): ?>
 	      <div class="tabs"><?php print render($tabs); ?></div>
 	    <?php endif; ?>
+      
       <?php print render($title_prefix); ?>
         <h3><?php echo $title; ?></h3>
       <?php print render($title_suffix); ?>
-	    <a id="main-content"></a>
+      
+      <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+      
 	    <?php echo render($page['content']); ?>
+      
 		</div>
 	</div>
 	

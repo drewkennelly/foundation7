@@ -10,7 +10,7 @@
       $element['#attributes']['accept-charset'] = "UTF-8";
     }
     
-    //add nice to form class
+    //add nice and custom to form class
     $element['#attributes']['class'] = array('nice', 'custom');
     
     // Anonymous DIV to satisfy XHTML compliance.
@@ -21,6 +21,8 @@
     $element = $variables['element'];
     $element['#attributes']['type'] = 'text';
     element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
+		
+		//add input-text to class
     _form_set_class($element, array('form-text', 'input-text'));
   
     $extra = '';
@@ -47,11 +49,8 @@
     $element['#attributes']['type'] = 'submit';
     element_set_attributes($element, array('id', 'name', 'value'));
   
-    $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
-    $element['#attributes']['class'][] = 'blue';
-    $element['#attributes']['class'][] = 'nice';
-    $element['#attributes']['class'][] = 'button';
-    $element['#attributes']['class'][] = 'radius';
+		//add classes to buttons
+    $element['#attributes']['class'][] = array('form-' . $element['#button_type'], 'blue', 'nice', 'button', 'radius');
 
     if (!empty($element['#attributes']['disabled'])) {
       $element['#attributes']['class'][] = 'form-button-disabled';
