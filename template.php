@@ -61,7 +61,7 @@
     element_set_attributes($element, array('id', 'name', 'value'));
   
 		//add classes to buttons
-    $element['#attributes']['class'][] = array('form-' . $element['#button_type'], 'blue', 'nice', 'button', 'radius');
+    $element['#attributes']['class'] = array('form-' . $element['#button_type'], 'blue', 'nice', 'button', 'radius');
 
     if (!empty($element['#attributes']['disabled'])) {
       $element['#attributes']['class'][] = 'form-button-disabled';
