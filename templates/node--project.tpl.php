@@ -101,12 +101,14 @@
       hide($content['links']);
 		?>
 		
-		<div id="project-image">
-    	<?php print render($content['field_image']); ?>
-    </div>			
-		<div id="project-body">
-			<?php print render($content); ?>
-    </div>
+    <div class="row">
+      <div class="four columns">
+        <?php print render($content['field_image']); ?>
+      </div>			
+      <div class="eight columns">
+        <?php print render($content); ?>
+      </div>
+		</div>
     
   </div>
 
