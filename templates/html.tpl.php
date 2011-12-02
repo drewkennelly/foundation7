@@ -56,6 +56,10 @@
 	<?php echo $head; ?>
 	<title><?php echo $head_title; ?></title>
 	<?php echo $styles; ?>
+  <!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
   <?php echo $scripts; ?>
 </head>
 <body <?php print $attributes;?>>
