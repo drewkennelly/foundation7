@@ -5,7 +5,8 @@ engine = phptemplate
 
 regions[left] = Left
 regions[content] = Content
-regions[footer] = Footer
+regions[footer_left] = Left Footer
+regions[footer_right] = Right Footer
 
 stylesheets[all][] = css/globals.css
 stylesheets[all][] = css/typography.css
