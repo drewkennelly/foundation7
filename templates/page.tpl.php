@@ -72,7 +72,7 @@
 	
 	<div class="row site-header">
 		<div class="twelve columns">
-			<h1><?php echo $site_name; ?></h1>
+			<h1><a href="<?php $front; ?>"><?php echo $site_name; ?></a></h1>
       <h4 class="subheader"><?php echo $site_slogan; ?></h4>
 			<hr />
 		</div>
@@ -83,7 +83,6 @@
       <?php print render($page['left']); ?>
 	  </div>
 		<div class="nine columns">
-      
 	    <?php echo $messages; ?>
       
 	    <?php if ($tabs): ?>
@@ -91,22 +90,29 @@
 	    <?php endif; ?>
       
       <?php print render($title_prefix); ?>
-        <h3><?php echo $title; ?></h3>
+        <h2><?php echo $title; ?></h2>
       <?php print render($title_suffix); ?>
       
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
       
 	    <?php echo render($page['content']); ?>
-      
 		</div>
 	</div>
 	
-	<?php if ( $page['footer'] ): ?>
+	<div class="row">
+	 <div class="twelve columns">
+	   <hr />
+	 </div>
+	</div>
+	
+	<?php if ( $page['footer_left'] || $page['footer_right'] ): ?>
 		<div class="row">
-			<div class="twelve columns">
-			  <hr />
-				<?php echo render($page['footer']); ?>
-			</div>
+		  <div class="five columns">
+        <?php echo render($page['footer_left']); ?>
+		  </div>
+		  <div class="five columns offset-by-two social">
+        <?php echo render($page['footer_right']); ?>
+		  </div>
 		</div>
 	<?php endif; ?>
 	
