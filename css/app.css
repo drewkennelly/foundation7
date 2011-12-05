@@ -1,6 +1,15 @@
+/* Header */
 .site-header {
 	margin-top:15px;
 }
+.site-header h1 a {
+	color: #004080;
+	text-shadow: 2px 2px 1px #cccccc;
+  filter: dropshadow(color=#cccccc, offx=2, offy=2);
+}
+
+
+/* Alert box */
 .alert-box ul {
 	margin-bottom:0;
 	margin-left:5px;
@@ -10,11 +19,15 @@
 	list-style-type: disc;
 	list-style-position: inside;
 }
+
+
+/* Form errors */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
 	border: 2px solid red !important;
 }
 
-/* overriding tabs display */
+
+/* Tabs */
 ul.tabs {
 	display: block;
 	margin: 0 0 20px 0;
@@ -105,7 +118,8 @@ ul.menu li:first-child a.active {
 	margin: 0;
 }
 
-/* Drupal ovverrides */
+
+/* Drupal overrides */
 ul li.leaf {
 	list-style-image: none;
 	list-style-type: none;
@@ -117,10 +131,22 @@ li.expanded, li.collapsed, li.leaf {
 	padding: 0;
 }
 
-/* Project styles */
+
+/* Projects */
 .project-list li {
 	float:left;
 }
 .project-list .views-field-title {
 	margin-bottom:5px;
+}
+
+
+/* Social media icons */
+.social a {
+  float:right;
+  margin-left:10px;
+  opacity:0.75;
+}
+.social a:hover {
+  opacity: 1;
 }
