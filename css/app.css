@@ -5,10 +5,8 @@
 .site-header h1 a {
 	color: #004080;
 	text-shadow: 2px 2px 1px #cccccc;
-  filter: dropshadow(color=#cccccc, offx=2, offy=2);
+	filter: dropshadow(color=#cccccc, offx=2, offy=2);
 }
-
-
 /* Alert box */
 .alert-box ul {
 	margin-bottom:0;
@@ -19,14 +17,10 @@
 	list-style-type: disc;
 	list-style-position: inside;
 }
-
-
 /* Form errors */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
 	border: 2px solid red !important;
 }
-
-
 /* Tabs */
 ul.tabs {
 	display: block;
@@ -117,8 +111,6 @@ ul.menu li a.active {
 ul.menu li:first-child a.active {
 	margin: 0;
 }
-
-
 /* Drupal overrides */
 ul li.leaf {
 	list-style-image: none;
@@ -130,21 +122,17 @@ ul.menu li {
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
 }
-
-
 /* Projects */
 .nine h2 {
-  border-bottom: 1px solid #EAEAEA;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+	border-bottom: 1px solid #EAEAEA;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
 }
-
-
 /* Social media icons */
 .social a {
-  float:right;
-  opacity:0.75;
+	float:right;
+	opacity:0.75;
 }
 .social a:hover {
-  opacity: 1;
+	opacity: 1;
 }
