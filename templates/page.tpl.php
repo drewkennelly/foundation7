@@ -107,10 +107,10 @@
 	
 	<?php if ( $page['footer_left'] || $page['footer_right'] ): ?>
 		<div class="row">
-		  <div class="five columns">
+		  <div class="eleven columns">
         <?php echo render($page['footer_left']); ?>
 		  </div>
-		  <div class="five columns offset-by-two social">
+		  <div class="one columns">
         <?php echo render($page['footer_right']); ?>
 		  </div>
 		</div>

@@ -133,18 +133,16 @@ li.expanded, li.collapsed, li.leaf {
 
 
 /* Projects */
-.project-list li {
-	float:left;
-}
-.project-list .views-field-title {
-	margin-bottom:5px;
+.nine h2 {
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 
 /* Social media icons */
 .social a {
   float:right;
-  margin-left:10px;
   opacity:0.75;
 }
 .social a:hover {
