@@ -13,9 +13,14 @@ stylesheets[all][] = css/typography.css
 stylesheets[all][] = css/grid.css
 stylesheets[all][] = css/ui.css
 stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/orbit.css
+stylesheets[all][] = css/reveal.css
 stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
 
+scripts[] = js/jquery.min.js
+scripts[] = js/jquery.reveal.js
+scripts[] = js/jquery.orbit-1.3.0.js
 scripts[] = js/forms.jquery.js
 scripts[] = js/jquery.customforms.js
 scripts[] = js/jquery.placeholder.min.js
