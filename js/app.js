@@ -13,8 +13,8 @@ $(document).ready(function () {
 		$activeTab.removeClass('active');
 		$tab.addClass('active');
 
-		//Show Tab Content
-		$(contentLocation).closest('.tabs-content').find('li').hide();
+    	//Show Tab Content
+		$(contentLocation).closest('.tabs-content').children('li').hide();
 		$(contentLocation).show();
 	}
 
@@ -29,6 +29,13 @@ $(document).ready(function () {
 	if (window.location.hash) {
 		activateTab($('a[href="' + window.location.hash + '"]'));
 	}
+	
+	/* ALERT BOXES ------------ */
+	$(".alert-box").delegate("a.close", "click", function() {
+	  $(this).closest(".alert-box").fadeOut(function(){
+	    $(this).remove();
+	  });
+	});
 
 
 	/* PLACEHOLDER FOR FORMS ------------- */
