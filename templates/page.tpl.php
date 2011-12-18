@@ -10,7 +10,8 @@
     <div class="three columns sidebar">
 			<?php print render($page['left']); ?>
     </div>
-    <div class="nine columns"> <?php echo $messages; ?>
+    <div class="nine columns">
+      <?php echo $messages; ?>
 			<?php if ($tabs): ?>
       	<div class="tabs"><?php print render($tabs); ?></div>
       <?php endif; ?>
