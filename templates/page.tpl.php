@@ -1,28 +1,25 @@
 <div class="container">
 
   <div class="row site-header">
-    <div class="twelve columns">
-      <h1><a href="<?php $front; ?>"><?php echo $site_name; ?></a></h1>
-      <h4 class="subheader"><?php echo $site_slogan; ?></h4>
+    <div class="eight columns">
+      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
+      <h4 class="subheader"><?php print $site_slogan; ?></h4>
+    </div>
+    <div class="four columns">
+      <?php print render($page['nav']); ?>
     </div>
   </div>
-  
+
   <div class="row">
-    <div class="twelve columns">
-			<?php echo render($page['nav']); ?>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="twelve columns main">
-      <?php echo $messages; ?>
+    <div class="eleven columns main">
+      <?php print $messages; ?>
       
 			<?php if ($tabs): ?>
       	<div class="tabs"><?php print render($tabs); ?></div>
       <?php endif; ?>
       
       <?php print render($title_prefix); ?>
-      <h2><?php echo $title; ?></h2>
+      <h2><?php print $title; ?></h2>
       <?php print render($title_suffix); ?>
       
       <?php if ($action_links): ?>
@@ -31,14 +28,14 @@
       	</ul>
       <?php endif; ?>
       
-      <?php echo render($page['content']); ?>
+      <?php print render($page['content']); ?>
     </div>
   </div>
   
   <?php if ( $page['footer'] ): ?>
     <div class="row">
       <div class="twelve columns">
-  			<?php echo render($page['footer_left']); ?>
+  			<?php print render($page['footer']); ?>
       </div>
     </div>
   <?php endif; ?>

@@ -3,8 +3,12 @@ html, body {
 }
 
 .main {
-  padding:15px;
+  padding: 3.5% 4.3%;
   background-color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #CCC;
 }
 
 /* Header */
@@ -84,16 +88,28 @@ ul li.leaf {
 	list-style-image: none;
 	list-style-type: none;
 }
+ul.menu {
+  float: right;
+}
 ul.menu li {
 	margin: 0;
+	display:inline;
+	margin-left:10px;
 }
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
 }
 
 /* Projects */
+.main h2, .main h3 {
+  color: #3B3B3B;
+}
 .main h2 {
 	border-bottom: 1px solid #EAEAEA;
 	padding-bottom: 5px;
 	margin-bottom: 20px;
+}
+
+.region-footer p {
+  margin: 9px 0 18px;
 }
