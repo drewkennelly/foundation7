@@ -3,10 +3,9 @@ description = Base theme for Drupal 7 built using Foundation by Zurb
 core = 7.x
 engine = phptemplate
 
-regions[left] = Left
+regions[nav] = Nav
 regions[content] = Content
-regions[footer_left] = Left Footer
-regions[footer_right] = Right Footer
+regions[footer] = Footer
 
 stylesheets[all][] = css/globals.css
 stylesheets[all][] = css/typography.css
