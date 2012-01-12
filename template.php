@@ -1,7 +1,7 @@
 <?php
 
 	function foundation_preprocess_page(&$variables) {
-		if ( $variables['right'] ) {
+		if ( !empty($variables['page']['right']) ) {
 			$variables['main_columns'] = 'nine';
 		} else {
 			$variables['main_columns'] = 'twelve';
