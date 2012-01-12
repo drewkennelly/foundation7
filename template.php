@@ -1,5 +1,13 @@
 <?php
 
+	function foundation_preprocess_page(&$variables) {
+		if ( $variables['right'] ) {
+			$variables['main_columns'] = 'nine';
+		} else {
+			$variables['main_columns'] = 'twelve';
+		}
+	}
+
   function foundation_form($variables) {
     $element = $variables['element'];
     if (isset($element['#action'])) {

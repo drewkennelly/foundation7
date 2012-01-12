@@ -17,7 +17,7 @@
   </div>
 
   <div class="row">
-    <div class="nine columns">
+    <div class="<?php print $main_columns;?> columns">
       <?php print $messages; ?>
       
 			<?php if ($tabs): ?>
@@ -37,9 +37,11 @@
       <?php print render($page['content']); ?>
     </div>
     
-    <div class="three columns">
-    	<?php print render($page['right']); ?>
-    </div>
+    <?php if ( $page['right'] ): ?>
+      <div class="three columns">
+        <?php print render($page['right']); ?>
+      </div>
+    <?php endif; ?>
   </div>
   
   <div class="row">
