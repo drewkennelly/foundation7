@@ -9,6 +9,12 @@
       <?php print render($page['nav']); ?>
     </div>
   </div>
+  
+  <div class="row">
+  	<div class="twelve columns">
+    	<hr />
+    </div>
+  </div>
 
   <div class="row">
     <div class="nine columns">
@@ -33,6 +39,12 @@
     
     <div class="three columns">
     	<?php print render($page['right']); ?>
+    </div>
+  </div>
+  
+  <div class="row">
+  	<div class="twelve columns">
+    	<hr />
     </div>
   </div>
   
