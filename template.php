@@ -1,11 +1,15 @@
 <?php
 
 	function foundation_preprocess_page(&$variables) {
-		if ( !empty($variables['page']['right']) ) {
+		if ( !empty($variables['page']['right']) )
 			$variables['main_columns'] = 'nine';
-		} else {
+		else
 			$variables['main_columns'] = 'twelve';
-		}
+		
+		if ( !empty($variables['page']['nav']) )
+			$variables['header_columns'] = 'eight';
+		else
+			$variables['header_columns'] = 'four';
 	}
 
   function foundation_form($variables) {
