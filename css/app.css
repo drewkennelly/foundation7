@@ -11,6 +11,8 @@ html, body {
   border: 1px solid #CCC;
 }
 
+
+
 /* Header */
 .site-header {
 	margin-top:15px;
@@ -19,6 +21,8 @@ html, body {
 	font-family: "League Gothic", Impact, Helvetica Neue, Helvetica, Arial, sans-serif;
 	margin-bottom:0;
 }
+
+
 
 /* Alert box */
 .alert-box ul {
@@ -31,10 +35,7 @@ html, body {
 	list-style-position: inside;
 }
 
-/* Form errors */
-.form-item input.error, .form-item textarea.error, .form-item select.error {
-	border: 2px solid red !important;
-}
+
 
 /* Tabs */
 ul.tabs {
@@ -48,23 +49,16 @@ ul.tabs li {
 	display: block;
 	width: auto;
 	height: 30px;
-	padding: 0px 9px 0 20px;
 	line-height: 30px;
 	float: left;
 	color: #999;
 	font-size: 11px;
 	text-transform: uppercase;
 	cursor: default;
+  padding: 0;
 }
 ul.tabs li:first-child {
 	padding: 0 9px 0 0px;
-}
-ul.tabs li {
-	display: block;
-	width: auto;
-	height: 30px;
-	padding: 0;
-	float: left;
 }
 ul.tabs li a {
 	display: block;
@@ -83,6 +77,8 @@ ul.tabs li a.active {
 	height: 30px;
 }
 
+
+
 /* Drupal overrides */
 ul li.leaf {
 	list-style-image: none;
@@ -100,6 +96,8 @@ li.expanded, li.collapsed, li.leaf {
 	padding: 0;
 }
 
+
+
 /* Projects */
 .main h2, .main h3 {
   color: #3B3B3B;
@@ -110,6 +108,9 @@ li.expanded, li.collapsed, li.leaf {
 	margin-bottom: 20px;
 }
 
+
+
+/* Footer */
 .region-footer p {
   margin: 9px 0 18px;
 }
