@@ -1,18 +1,3 @@
-html, body {
-  background-image: url(../images/bg.png);
-}
-
-.main {
-  padding: 3.5% 4.3%;
-  background-color: white;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #CCC;
-}
-
-
-
 /* Header */
 .site-header {
 	margin-top:15px;
@@ -21,71 +6,13 @@ html, body {
 	font-family: "League Gothic", Impact, Helvetica Neue, Helvetica, Arial, sans-serif;
 	margin-bottom:0;
 }
-
-
-
-/* Alert box */
-.alert-box ul {
-	margin-bottom:0;
-	margin-left:5px;
-}
-.alert-box ul li {
-	margin-bottom: 0;
-	list-style-type: disc;
-	list-style-position: inside;
-}
-
-
-
-/* Tabs */
-ul.tabs {
-	display: block;
-	margin: 0 0 20px 0;
-	padding: 0;
-	height: 30px;
-	border-bottom: solid 1px #ddd;
-}
-ul.tabs li {
-	display: block;
-	width: auto;
-	height: 30px;
-	line-height: 30px;
-	float: left;
-	color: #999;
-	font-size: 11px;
-	text-transform: uppercase;
-	cursor: default;
-  padding: 0;
-}
-ul.tabs li:first-child {
-	padding: 0 9px 0 0px;
-}
-ul.tabs li a {
-	display: block;
-	width: auto;
-	height: 29px;
-	padding: 0px 9px;
-	line-height: 30px;
-	border: solid 1px #ddd;
-	margin: 0 -1px 0 0;
-	color: #555;
-	background: #eee;
-}
-ul.tabs li a.active {
-	background: #fff;
-	border-width: 1px 1px 0px 1px;
-	height: 30px;
-}
-
-
-
 /* Drupal overrides */
 ul li.leaf {
 	list-style-image: none;
 	list-style-type: none;
 }
 ul.menu {
-  float: right;
+	float: right;
 }
 ul.menu li {
 	margin: 0;
@@ -94,23 +21,4 @@ ul.menu li {
 }
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
-}
-
-
-
-/* Projects */
-.main h2, .main h3 {
-  color: #3B3B3B;
-}
-.main h2 {
-	border-bottom: 1px solid #EAEAEA;
-	padding-bottom: 5px;
-	margin-bottom: 20px;
-}
-
-
-
-/* Footer */
-.region-footer p {
-  margin: 9px 0 18px;
 }
