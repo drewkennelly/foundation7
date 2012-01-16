@@ -6,19 +6,3 @@
 	font-family: "League Gothic", Impact, Helvetica Neue, Helvetica, Arial, sans-serif;
 	margin-bottom:0;
 }
-/* Drupal overrides */
-ul li.leaf {
-	list-style-image: none;
-	list-style-type: none;
-}
-ul.menu {
-	float: right;
-}
-ul.menu li {
-	margin: 0;
-	display:inline;
-	margin-left:10px;
-}
-li.expanded, li.collapsed, li.leaf {
-	padding: 0;
-}
