@@ -45,6 +45,7 @@
         <?php print render($page['right']); ?>
       </div>
     <?php endif; ?>
+
   </div>
   
   <?php if ( $page['footer'] ): ?>
