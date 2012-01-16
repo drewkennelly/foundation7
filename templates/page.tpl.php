@@ -1,10 +1,16 @@
 <div class="container">
 
   <div class="row site-header">
-    <div class="twelve columns">
-      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
-      <h4 class="subheader"><?php print $site_slogan; ?></h4>
-    </div>
+		<?php if ( $page['header'] ): ?>
+    	<div class="twelve columns">
+	      <?php print render( $page['header']); ?>
+	    </div>
+		<?php else: ?>
+	    <div class="twelve columns">
+	      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
+	      <h4 class="subheader"><?php print $site_slogan; ?></h4>
+	    </div>
+		<?php endif; ?>
   </div>
 	<!-- Header -->
 

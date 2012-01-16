@@ -4,7 +4,7 @@ core = 7.x
 engine = phptemplate
 
 regions[header] = Header
-regions[main_nav] = Navigation
+regions[nav] = Navigation
 regions[content] = Content
 regions[left] = Left
 regions[right] = Right
