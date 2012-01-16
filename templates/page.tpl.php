@@ -1,17 +1,22 @@
 <div class="container">
 
   <div class="row site-header">
-    <div class="<?php print $header_columns; ?> columns">
+    <div class="twelve columns">
       <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
       <h4 class="subheader"><?php print $site_slogan; ?></h4>
     </div>
-    
-    <?php if ( $page['nav'] ): ?>
-      <div class="four columns">
-        <?php print render($page['nav']); ?>
-      </div>
-  	<?php endif; ?>
   </div>
+	<!-- Header -->
+
+	<?php if ( $page['nav'] ): ?>
+		<div class="row">
+			<div class="four columns">
+				<hr />
+				<?php print render($page['nav']); ?>
+			</div>
+		</div>
+		<!-- Main Navigation -->
+	<?php endif; ?>
   
   <div class="row">
   	<div class="twelve columns">
@@ -20,7 +25,17 @@
   </div>
 
   <div class="row">
+		
+		<?php if ( $page['left'] ): ?>
+	    <div class="three columns">
+	      <?php print render($page['left']); ?>
+	    </div>
+			<!-- Left sidebar -->
+	  <?php endif; ?>
+	
+	
     <div class="<?php print $main_columns;?> columns">
+	
       <?php print $messages; ?>
       
 			<?php if ($tabs): ?>
@@ -39,11 +54,13 @@
       
       <?php print render($page['content']); ?>
     </div>
-    
+    <!-- Main content area -->
+
     <?php if ( $page['right'] ): ?>
       <div class="three columns">
         <?php print render($page['right']); ?>
       </div>
+			<!-- Right sidebar -->
     <?php endif; ?>
 
   </div>
@@ -60,6 +77,8 @@
   			<?php print render($page['footer']); ?>
       </div>
     </div>
+		<!-- Footer -->
   <?php endif; ?>
   
 </div>
+<!-- Container -->

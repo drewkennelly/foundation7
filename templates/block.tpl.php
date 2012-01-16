@@ -5,9 +5,10 @@
   	<h4<?php print $title_attributes; ?>><?php print $block->subject ?></h4>
   <?php endif;?>
   <?php print render($title_suffix); ?>
-  
+
   <div class="content"<?php print $content_attributes; ?>>
 		<?php print $content ?>
   </div>
-  
+
 </div>
+<!-- Block -->

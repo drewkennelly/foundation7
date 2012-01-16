@@ -1,17 +1,21 @@
 <?php
 
+	/*
+		Preprocess function to determine number of columns for main content area
+	*/
 	function foundation_preprocess_page(&$variables) {
-		if ( !empty($variables['page']['right']) )
+		if ( !empty($variables['page']['left']) && !empty($variables['page']['right']) )
+			$variables['main_columns'] = 'six';
+		else if ( !empty($variables['page']['left']) || !empty($variables['page']['right']) )
 			$variables['main_columns'] = 'nine';
-		else
+		else if ( empty($variables['page']['left']) && empty($variables['page']['right']) )
 			$variables['main_columns'] = 'twelve';
-		
-		if ( !empty($variables['page']['nav']) )
-			$variables['header_columns'] = 'eight';
-		else
-			$variables['header_columns'] = 'four';
 	}
 
+
+	/*
+		Add nice class to forms
+	*/
   function foundation_form($variables) {
     $element = $variables['element'];
     if (isset($element['#action'])) {
@@ -29,6 +33,10 @@
     return '<form' . drupal_attributes($element['#attributes']) . '><div>' . $element['#children'] . '</div></form>';
   }
   
+
+	/*
+		Add input-text class to textfields
+	*/
   function foundation_textfield($variables) {
     $element = $variables['element'];
     $element['#attributes']['type'] = 'text';
@@ -56,6 +64,10 @@
     return $output . $extra;
   }
 	
+	
+	/*
+		Add input-text class to password fields
+	*/
 	function foundation_password($variables) {
 		$element = $variables['element'];
 		$element['#attributes']['type'] = 'password';
@@ -67,6 +79,10 @@
 		return '<input' . drupal_attributes($element['#attributes']) . ' />';
 	}
   
+
+	/*
+		Add blue, nice, button and radius classes to buttons
+	*/
   function foundation_button($variables) {
     $element = $variables['element'];
     $element['#attributes']['type'] = 'submit';
@@ -83,6 +99,9 @@
   }
 	
 	
+	/*
+		Change message box calss to alert-box
+	*/
 	function foundation_status_messages($variables) {
 		$display = $variables['display'];
 		$output = '';
