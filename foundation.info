@@ -15,9 +15,3 @@ stylesheets[all][] = css/ui.css
 stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
-
-scripts[] = js/modernizr.foundation.js
-scripts[] = js/forms.jquery.js
-scripts[] = js/jquery.customforms.js
-scripts[] = js/jquery.placeholder.min.js
-scripts[] = js/app.js
