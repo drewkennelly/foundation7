@@ -13,3 +13,10 @@
   padding-bottom: 14px;
   border-bottom: 1px dashed #CCC;
 }
+
+h2 {
+  color: #666;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
