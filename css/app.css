@@ -6,3 +6,10 @@
 	font-family: "League Gothic", Impact, Helvetica Neue, Helvetica, Arial, sans-serif;
 	margin-bottom:0;
 }
+
+/* Views */
+.view-projects .views-row {
+  margin-bottom: 35px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed #CCC;
+}
