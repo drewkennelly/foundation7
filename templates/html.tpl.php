@@ -20,10 +20,6 @@
 
   <?php echo $styles; ?>
 	<!-- Styles -->
-	
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
