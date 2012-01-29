@@ -40,7 +40,7 @@
 	  <?php endif; ?>
 	
 	
-    <div class="<?php print $main_columns;?> columns">
+    <div class="<?php print $main_columns; ?> columns">
 	
       <?php print $messages; ?>
       

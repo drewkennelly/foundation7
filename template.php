@@ -100,7 +100,7 @@
 	
 	
 	/*
-		Change message box calss to alert-box
+		Change message box class to alert-box
 	*/
 	function foundation_status_messages($variables) {
 		$display = $variables['display'];

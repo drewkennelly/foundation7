@@ -21,12 +21,16 @@
   <?php echo $styles; ?>
 	<!-- Styles -->
 
-	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	 <link rel="stylesheet" href="css/ie.css">
 	<![endif]-->
 
-  <?php echo $scripts; ?>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+	 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<?php echo $scripts; ?>
 	<!-- Scripts -->
 
 </head>
