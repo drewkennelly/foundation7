@@ -11,7 +11,7 @@ Regions
 * Navigation
 * Left
 * Right
-* Main Content
+* Content
 * Footer
 
 
