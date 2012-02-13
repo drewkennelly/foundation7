@@ -22,7 +22,7 @@
 	<!-- Styles -->
 
 	<!--[if lt IE 9]>
-	 <link rel="stylesheet" href="<?php print $base_path . $directory; ?>/css/ie.css">
+	 <link rel="stylesheet" href="<?php print $directory; ?>/css/ie.css">
 	<![endif]-->
 
 	<!-- IE Fix for HTML5 Tags -->
