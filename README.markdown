@@ -26,7 +26,4 @@ TODO
 ====================
 
 * Build modules for Orbit and Reveal - possibly as plugins for Views Slideshow
-* Style tabs
 * Add close buttons to alert boxes
-* Replace jquery.min.js with jQuery Update module integration
-* more to come...
