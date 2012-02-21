@@ -10,6 +10,7 @@
 :: Labels
 :: Tabs
 :: Pagination
+:: Breadcrumbs
 :: Lists
 :: Panels
 :: Nav
@@ -38,20 +39,26 @@
 		position: relative;
 		cursor: pointer;
 		border: none;
+		outline: none;
 		margin: 0;
 	}
 	
   	/* Don't use native buttons on iOS */
 	input[type=submit].button, button.button { -webkit-appearance: none; }
 	
+	/* Hide inner focus effect in Firefox */
+	button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+		border: none;
+	}
+	
 	.button.nice { 
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px;
+		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -31px;
 		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
 		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
 		box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
 		text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
+		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -31px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
+		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -31px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
 		border: 1px solid #0593dc;
 		-webkit-transition: background-color .15s ease-in-out;
 		-moz-transition: background-color .15s ease-in-out;
@@ -88,7 +95,8 @@
 	.large.button 			{ font-size: 18px; padding: 11px 48px 13px; width: auto; }
 
 	/* Nice Sizes ---------- */
-	.nice.small.button 		{ background-position: 0 -36px; }
+	.nice.tiny.button 		{ background-position: 0 -37px; }
+	.nice.small.button 		{ background-position: 0 -34px; }
 	.nice.large.button 		{ background-position: 0 -30px; }
 
 	/* Colors ---------- */
@@ -111,7 +119,7 @@
 	.red.button:hover, .red.button:focus 		{ background-color: #d01217; }
 	.white.button:hover, .white.button:focus	{ background-color: #dadada; color: #333; }
 	.black.button:hover, .black.button:focus	{ background-color: #000; }
-	.green.button:hover, .green.button:focus		{ background-color: #699c40; }	
+	.green.button:hover, .green.button:focus	{ background-color: #699c40; }	
 
 	/* Hovers ---------- */
 	.nice.button:active 	{ 
@@ -122,6 +130,15 @@
 	
 	/* Disabled ---------- */
 	.button.disabled, .button[disabled] { opacity: 0.6; cursor: default; }
+	
+	/* Correct FF button padding */
+	@-moz-document url-prefix(http://) {
+		input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner { border: 0; padding: 0; }
+		input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
+		input[type=submit].small.button		{ padding: 7px 20px 8px; }
+		input[type=submit].medium.button	{ padding: 8px 34px 9px; }
+		input[type=submit].large.button		{ padding: 9px 48px 10px; }
+	}
 
 
 
@@ -200,6 +217,21 @@
     ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus { border-bottom: solid 2px #00a6fc; color: #141414; }
     ul.pagination li.unavailable a { cursor: default; color: #999; }
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus { border-bottom: none; }
+    
+/*  --------------------------------------------------
+    Breadcrumbs
+    -------------------------------------------------- */    
+    ul.breadcrumbs { display: block; background: #f4f4f4; padding: 7px 10px; border: 1px solid #ddd; border-radius: 2px; overflow: hidden; }
+	ul.breadcrumbs li { margin: 0; padding: 0 12px 0 0; float: left; }
+	ul.breadcrumbs li a, ul.breadcrumbs li span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }
+	ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
+	ul.breadcrumbs li:before { content: "/"; color: #aaa; }
+	ul.breadcrumbs li:first-child:before { content: ""; }
+	ul.breadcrumbs li.current a { cursor: default; color: #333; }
+	ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus { text-decoration: underline; }
+	ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus { text-decoration: none; }
+	ul.breadcrumbs li.unavailable a { color: #999; }
+    ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: #999; cursor: default; }
     
 /*  --------------------------------------------------
     Lists
@@ -338,7 +370,7 @@
 	  color: #0192dd;
 	}
 	.tooltip {
-      display: none;
+    display: none;
 	  background: rgb(0,0,0);
 	  background: rgba(0,0,0,0.8);
 	  position: absolute;
@@ -364,22 +396,27 @@
 	  top: -10px;
 	  left: 10px;
 	}
-	.tooltip.top > .nub {
+	.tooltip.tip-override > .nub {
+	  border-color: transparent transparent rgb(0,0,0) transparent !important;
+	  border-color: transparent transparent rgba(0,0,0,0.8) transparent !important;
+	  top: -10px !important;
+	}
+	.tooltip.tip-top > .nub {
 	  border-color: rgb(0,0,0) transparent transparent transparent;
 	  border-color: rgba(0,0,0,0.8) transparent transparent transparent;
 	  top: auto;
 	  bottom: -10px;
 	}
-	.tooltip.left, .tooltip.right, .has-tip.left, .has-tip.right {
+	.tooltip.tip-left, .tooltip.tip-right, .has-tip.tip-left, .has-tip.tip-right {
 	  float: none !important;
 	}
-	.tooltip.left > .nub {
+	.tooltip.tip-left > .nub {
 	  border-color: transparent transparent transparent rgb(0,0,0);
 	  border-color: transparent transparent transparent rgba(0,0,0,0.8);
 	  right: -10px;
 	  left: auto;
 	}
-	.tooltip.right > .nub {
+	.tooltip.tip-right > .nub {
 	  border-color: transparent rgb(0,0,0) transparent transparent;
 	  border-color: transparent rgba(0,0,0,0.8) transparent transparent;
 	  right: auto;
