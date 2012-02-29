@@ -20,7 +20,6 @@ stylesheets[all][] = css/reveal.css
 stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
 
-scripts[] = js/modernizr.foundation.js
 scripts[] = js/jquery.reveal.js
 scripts[] = js/jquery.orbit-1.4.0.js
 scripts[] = js/jquery.customforms.js
