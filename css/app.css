@@ -1,40 +1,29 @@
-/* Header */
-.site-header {
-	margin-top:15px;
-}
-.site-header h1 {
-	margin-bottom:0;
-}
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
 
 
-/* Views */
-.view-projects .views-row {
-  margin-bottom: 35px;
-  padding-bottom: 14px;
-  border-bottom: 1px dashed #CCC;
-}
-
-.view-projects .views-row-last {
-  border-bottom: none;
-  margin-bottom: 0;
-}
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
 
 
-/* Fonts */
-h2 {
-  color: #666;
-  border-bottom: 1px solid #EAEAEA;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
 
 
-/*--------------------------------------------------
-Tabs
--------------------------------------------------- */
-ul.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; }
-ul.tabs li { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; }
-ul.tabs li:first-child { padding: 0 9px 0 0; }
-ul.tabs li { display: block; width: auto; height: 30px; padding: 0; float: left; }
-ul.tabs li a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
-ul.tabs li a.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
