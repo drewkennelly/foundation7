@@ -6,6 +6,9 @@
  * http://www.opensource.org/licenses/mit-license.php
 */
 
+jQuery.foundation = jQuery.foundation || {};
+jQuery.foundation.customForms = jQuery.foundation.customForms || {};
+
 jQuery(document).ready(function ($) {
   
   function appendCustomMarkup(type) {
@@ -22,8 +25,6 @@ jQuery(document).ready(function ($) {
       $span.toggleClass('disabled', $this.is(':disabled'));
     });
   }
-  appendCustomMarkup('checkbox');
-  appendCustomMarkup('radio');
 
   function appendCustomSelect(sel) {
     var $this = $(sel),
@@ -72,6 +73,9 @@ jQuery(document).ready(function ($) {
       }
     });
 
+    $customSelect.css('width', 'inherit');
+    $customSelect.find('ul').css('width', 'inherit');
+
     $customSelect.find('li').each(function () {
       $customSelect.addClass('open');
       if ($(this).outerWidth() > maxWidth) {
@@ -86,11 +90,17 @@ jQuery(document).ready(function ($) {
     }
 
   }
-
-  $('form.custom select').each(function () {
-    appendCustomSelect(this);
-  });
   
+  $.foundation.customForms.appendCustomMarkup = function () {
+    appendCustomMarkup('checkbox');
+    appendCustomMarkup('radio');
+  
+    $('form.custom select').each(function () {
+      appendCustomSelect(this);
+    });
+  };
+
+  $.foundation.customForms.appendCustomMarkup();
 });
 
 (function ($) {
