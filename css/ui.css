@@ -174,94 +174,94 @@
     Tabs
     -------------------------------------------------- */
 	dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; }
-    dl.tabs dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; }
-    dl.tabs dt:first-child { padding: 0 9px 0 0; }
-    dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; }
-    dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
-    dl.tabs dd a.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
+  dl.tabs dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; }
+  dl.tabs dt:first-child { padding: 0 9px 0 0; }
+  dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; margin-left: 0; }
+  dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
+  dl.tabs dd a.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
 
-		.nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
-		.nice.tabs dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; }
-		.nice.tabs dd a.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid #00a6fc; margin: 0 10px; position: relative; top: -5px; }
-		.nice.tabs dd:first-child a.active { margin-left: 0; }
+    .nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
+    .nice.tabs dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; }
+    .nice.tabs dd a.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid #00a6fc; margin: 0 10px; position: relative; top: -5px; }
+    .nice.tabs dd:first-child a.active { margin-left: 0; }
 		
 	dl.tabs.vertical { height: auto; }
 	dl.tabs.vertical dt, dl.tabs.vertical dd, dl.nice.tabs.vertical dt, dl.nice.tabs.vertical dd { float: none; height: auto; }
 	dl.tabs.vertical dd a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 1px 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
 	dl.tabs.vertical dd a.active { height: auto; margin: 0; border-width: 1px 0 0; background: #fff; }
 	
-		.nice.tabs.vertical { border-bottom: solid 1px #eee; height: auto; }
-		.nice.tabs.vertical dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; }
-		.nice.tabs.vertical dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
-		.nice.tabs.vertical dd:first-child a.active { margin: 0; }
-    
-    ul.tabs-content { margin: 0; display: block; }
-    ul.tabs-content>li { display: none; }
-    .no-js ul.tabs-content>li { display: block; }
-    ul.tabs-content>li.active { display: block; }
-    
-    dl.contained, dl.nice.contained { margin-bottom: 0; }
-    dl.contained.tabs dd a { padding: 0 14px; }
-    dl.nice.contained.tabs dd a { padding: 7px 18px 9px; }
-
-    ul.contained.tabs-content { padding: 0; }
-	ul.contained.tabs-content>li { padding: 20px; border: solid 0 #ddd; border-width: 0 1px 1px 1px; }
-	ul.contained.vertical.tabs-content>li { border-width: 1px 1px 1px 1px; }
-	ul.nice.contained.tabs-content>li { border-color: #eee; }
+    .nice.tabs.vertical { border-bottom: solid 1px #eee; height: auto; }
+    .nice.tabs.vertical dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; }
+    .nice.tabs.vertical dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
+    .nice.tabs.vertical dd:first-child a.active { margin: 0; }
+  
+  ul.tabs-content { margin: 0; padding: 0; display: block; }
+  ul.tabs-content>li { display: none; }
+  .no-js ul.tabs-content>li { display: block; }
+  ul.tabs-content>li.active { display: block; }
+  
+  dl.contained, dl.nice.contained { margin-bottom: 0; }
+  dl.contained.tabs dd a { padding: 0 14px; }
+  dl.nice.contained.tabs dd a { padding: 7px 18px 9px; }
+  
+  ul.contained.tabs-content { padding: 0; }
+  ul.contained.tabs-content>li { padding: 20px; border: solid 0 #ddd; border-width: 0 1px 1px 1px; }
+  ul.contained.vertical.tabs-content>li { border-width: 1px 1px 1px 1px; }
+  ul.nice.contained.tabs-content>li { border-color: #eee; }
 	
 /*  --------------------------------------------------
     Pagination
     -------------------------------------------------- */
-    ul.pagination { display: block; height: 24px; margin-left: -5px; }
-    ul.pagination li { float: left; display: block; height: 24px; color: #999; font-size: 15px; margin-left: 5px; }
-    ul.pagination li a { display: block; padding: 6px 7px 4px; color: #555; }
-    ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus { border-bottom: solid 2px #00a6fc; color: #141414; }
-    ul.pagination li.unavailable a { cursor: default; color: #999; }
-    ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus { border-bottom: none; }
+  ul.pagination { display: block; height: 24px; margin-left: -5px; }
+  ul.pagination li { float: left; display: block; height: 24px; color: #999; font-size: 15px; margin-left: 5px; }
+  ul.pagination li a { display: block; padding: 6px 7px 4px; color: #555; }
+  ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus { border-bottom: solid 2px #00a6fc; color: #141414; }
+  ul.pagination li.unavailable a { cursor: default; color: #999; }
+  ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus { border-bottom: none; }
     
 /*  --------------------------------------------------
     Breadcrumbs
     -------------------------------------------------- */    
-    ul.breadcrumbs { display: block; background: #f4f4f4; padding: 7px 10px; border: 1px solid #ddd; border-radius: 2px; overflow: hidden; }
-	ul.breadcrumbs li { margin: 0; padding: 0 12px 0 0; float: left; }
-	ul.breadcrumbs li a, ul.breadcrumbs li span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }
-	ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
-	ul.breadcrumbs li:before { content: "/"; color: #aaa; }
-	ul.breadcrumbs li:first-child:before { content: " "; }
-	ul.breadcrumbs li.current a { cursor: default; color: #333; }
-	ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus { text-decoration: underline; }
-	ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus { text-decoration: none; }
-	ul.breadcrumbs li.unavailable a { color: #999; }
-    ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: #999; cursor: default; }
+  ul.breadcrumbs { display: block; background: #f4f4f4; padding: 7px 10px; border: 1px solid #ddd; border-radius: 2px; overflow: hidden; }
+  ul.breadcrumbs li { margin: 0; padding: 0 12px 0 0; float: left; list-style: none; }
+  ul.breadcrumbs li a, ul.breadcrumbs li span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }
+  ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
+  ul.breadcrumbs li:before { content: "/"; color: #aaa; }
+  ul.breadcrumbs li:first-child:before { content: " "; }
+  ul.breadcrumbs li.current a { cursor: default; color: #333; }
+  ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus { text-decoration: underline; }
+  ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus { text-decoration: none; }
+  ul.breadcrumbs li.unavailable a { color: #999; }
+  ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: #999; cursor: default; }
     
 /*  --------------------------------------------------
     Lists
     -------------------------------------------------- */
-    ul.nice, ol.nice { list-style: none; margin: 0; }
-    ul.nice li, ol.nice li { padding-left: 13px; position: relative }
-    ul.nice li span.bullet, ol.nice li span.number { position: absolute; left: 0; top: 0; color: #ccc; }
+  ul.nice, ol.nice { list-style: none; margin: 0; }
+  ul.nice li, ol.nice li { padding-left: 13px; position: relative }
+  ul.nice li span.bullet, ol.nice li span.number { position: absolute; left: 0; top: 0; color: #ccc; }
 
 /*	--------------------------------------------------
 	Panels
 	-------------------------------------------------- */
-	div.panel {
-		padding: 20px 20px 2px 20px;
-		background: #efefef;
-		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
-		background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
-		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-		margin: 0 0 20px 0;
-	}
+  div.panel {
+  	padding: 20px 20px 2px 20px;
+  	background: #efefef;
+  	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+  	background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
+  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+  	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  	margin: 0 0 20px 0;
+  }
 
 /*	--------------------------------------------------
    	Nav Bar with Dropdowns
 	-------------------------------------------------- */
 	
-	.nav-bar { height: 45px; background: #fff; margin-top: 20px; border: 1px solid #ddd; }	
+	.nav-bar { height: 45px; background: #fff; margin-top: 20px; padding: 0; border: 1px solid #ddd; }	
 	.nav-bar>li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px; }
 	.nav-bar>li>a.main { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 15px; font-size: 1.5rem; }
 	.nav-bar>li>input { margin: 0 16px; }
