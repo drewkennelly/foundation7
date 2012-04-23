@@ -7,12 +7,12 @@
     boxsizing.htc for IE7 support
 */
 
-  .container { padding: 0 20px; }
+  .container { /* No longer required due to box-sizing */ }
   
-  .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; position: relative; }
+  .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
   .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
   
-  .column, .columns { padding: 0 15px; float: left; min-height: 1px; position: relative; }
+  .column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
   [class*="column"] + [class*="column"]:last-child { float: right; }
   [class*="column"] + [class*="column"].end { float: left; }
   
@@ -79,7 +79,7 @@
   /* Mobile */
   @media only screen and (max-width: 767px) {		
     body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
-    .container { min-width: 0; margin-left: 0; margin-right: 0; padding: 0; }
+    .container {  }
     
     .row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
     
