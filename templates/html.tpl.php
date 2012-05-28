@@ -22,10 +22,10 @@
 	<!-- Styles -->
 
 	<!--[if lt IE 9]>
-	 <link rel="stylesheet" href="/css/ie.css">
+	 <link rel="stylesheet" href="/<?php print $directory; ?>/css/ie.css">
 	<![endif]-->
 
-  <script src="/js/modernizr.foundation.js"></script>
+  <script src="/<?php print $directory; ?>/js/modernizr.foundation.js"></script>
 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
