@@ -19,4 +19,5 @@ stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/mobile.css
 stylesheets[all][] = css/app.css
 
+scripts[] = js/modernizr.foundation.js
 scripts[] = js/app.js

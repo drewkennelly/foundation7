@@ -22,11 +22,7 @@
 		<!-- Main Navigation -->
 	<?php endif; ?>
 
-  <div class="row">
-  	<div class="twelve columns">
-    	<hr />
-    </div>
-  </div>
+  <div class="row"><div class="twelve columns"><hr /></div></div>
 
   <div class="row">
 
@@ -70,11 +66,7 @@
   </div>
 
   <?php if ( $page['footer'] ): ?>
-    <div class="row">
-      <div class="twelve columns">
-        <hr />
-      </div>
-    </div>
+    <div class="row"><div class="twelve columns"><hr /></div></div>
 
     <div class="row">
       <div class="twelve columns">
