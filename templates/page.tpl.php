@@ -15,14 +15,14 @@
 	<?php if ( $page['nav'] ): ?>
 		<div class="row">
 			<div class="four columns">
-				<hr />
+				<hr>
 				<?php print render($page['nav']); ?>
 			</div>
 		</div>
 		<!-- Main Navigation -->
 	<?php endif; ?>
 
-  <div class="row"><div class="twelve columns"><hr /></div></div>
+  <div class="row"><div class="twelve columns"><hr></div></div>
 
   <div class="row">
 
@@ -66,7 +66,7 @@
   </div>
 
   <?php if ( $page['footer'] ): ?>
-    <div class="row"><div class="twelve columns"><hr /></div></div>
+    <div class="row"><div class="twelve columns"><hr></div></div>
 
     <div class="row">
       <div class="twelve columns">
