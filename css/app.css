@@ -1,6 +1,6 @@
 /* Artfully masterminded by ZURB  */
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
@@ -8,6 +8,17 @@
 :: Page Name 2
 */
 
+.calculator {
+  float:left;
+  margin-right:20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .calculator {
+    float:none;
+    margin-right:0;
+  }
+}
 
 /* -----------------------------------------
    Shared Styles
