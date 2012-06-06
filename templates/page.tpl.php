@@ -3,7 +3,9 @@
   <div class="row">
     <div class="twelve columns">
       <?php if ( $page['header'] ): ?>
-        <?php print render( $page['header']); ?>
+        <?php print render($page['header']); ?>
+      <?php elseif ($is_front): ?>
+        <h1><?php print $site_name; ?></h1>
       <?php else: ?>
         <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
         <h4 class="subheader"><?php print $site_slogan; ?></h4>
@@ -12,7 +14,7 @@
   </div>
 	<!-- Header -->
 
-	<?php if ( $page['nav'] ): ?>
+	<?php if ($page['nav']): ?>
 		<div class="row">
 			<div class="four columns">
 				<hr>
@@ -26,7 +28,7 @@
 
   <div class="row">
 
-		<?php if ( $page['left'] ): ?>
+		<?php if ($page['left']): ?>
 	    <div class="three columns">
 	      <?php print render($page['left']); ?>
 	    </div>
@@ -56,7 +58,7 @@
     </div>
     <!-- Main content area -->
 
-    <?php if ( $page['right'] ): ?>
+    <?php if ($page['right']): ?>
       <div class="three columns">
         <?php print render($page['right']); ?>
       </div>
@@ -65,7 +67,7 @@
 
   </div>
 
-  <?php if ( $page['footer'] ): ?>
+  <?php if ($page['footer']): ?>
     <div class="row"><div class="twelve columns"><hr></div></div>
 
     <div class="row">
