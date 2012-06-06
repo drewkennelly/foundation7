@@ -6,6 +6,7 @@
         <?php print render($page['header']); ?>
       <?php elseif ($is_front): ?>
         <h1><?php print $site_name; ?></h1>
+        <h4 class="subheader"><?php print $site_slogan; ?></h4>
       <?php else: ?>
         <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
         <h4 class="subheader"><?php print $site_slogan; ?></h4>
