@@ -1,83 +1,79 @@
-<div class="container">
 
-  <div class="row">
-    <div class="twelve columns">
-      <?php if ( $page['header'] ): ?>
-        <?php print render($page['header']); ?>
-      <?php elseif ($is_front): ?>
-        <h1><?php print $site_name; ?></h1>
-        <h4 class="subheader"><?php print $site_slogan; ?></h4>
-      <?php else: ?>
-        <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
-        <h4 class="subheader"><?php print $site_slogan; ?></h4>
-      <?php endif; ?>
-    </div>
+<div class="row">
+  <div class="twelve columns">
+    <?php if ( $page['header'] ): ?>
+      <?php print render($page['header']); ?>
+    <?php elseif ($is_front): ?>
+      <h1><?php print $site_name; ?></h1>
+      <h4 class="subheader"><?php print $site_slogan; ?></h4>
+    <?php else: ?>
+      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
+      <h4 class="subheader"><?php print $site_slogan; ?></h4>
+    <?php endif; ?>
   </div>
-	<!-- Header -->
+</div>
+<!-- Header -->
 
-	<?php if ($page['nav']): ?>
-		<div class="row">
-			<div class="four columns">
-				<hr>
-				<?php print render($page['nav']); ?>
-			</div>
+<?php if ($page['nav']): ?>
+	<div class="row">
+		<div class="four columns">
+			<hr>
+			<?php print render($page['nav']); ?>
 		</div>
-		<!-- Main Navigation -->
-	<?php endif; ?>
+	</div>
+	<!-- Main Navigation -->
+<?php endif; ?>
 
-  <div class="row"><div class="twelve columns"><hr></div></div>
+<div class="row"><div class="twelve columns"><hr></div></div>
 
-  <div class="row">
+<div class="row">
 
-		<?php if ($page['left']): ?>
-	    <div class="three columns">
-	      <?php print render($page['left']); ?>
-	    </div>
-			<!-- Left sidebar -->
-	  <?php endif; ?>
-
-
-    <div class="<?php print $main_columns; ?> columns">
-
-      <?php print $messages; ?>
-
-			<?php if ($tabs): ?>
-      	<div class="tabs"><?php print render($tabs); ?></div>
-      <?php endif; ?>
-
-      <?php print render($title_prefix); ?>
-      <h2><?php print $title; ?></h2>
-      <?php print render($title_suffix); ?>
-
-      <?php if ($action_links): ?>
-      	<ul class="action-links">
-      		<?php print render($action_links); ?>
-      	</ul>
-      <?php endif; ?>
-
-      <?php print render($page['content']); ?>
+	<?php if ($page['left']): ?>
+    <div class="three columns">
+      <?php print render($page['left']); ?>
     </div>
-    <!-- Main content area -->
+		<!-- Left sidebar -->
+  <?php endif; ?>
 
-    <?php if ($page['right']): ?>
-      <div class="three columns">
-        <?php print render($page['right']); ?>
-      </div>
-			<!-- Right sidebar -->
+
+  <div class="<?php print $main_columns; ?> columns">
+
+    <?php print $messages; ?>
+
+		<?php if ($tabs): ?>
+    	<div class="tabs"><?php print render($tabs); ?></div>
     <?php endif; ?>
 
+    <?php print render($title_prefix); ?>
+    <h2><?php print $title; ?></h2>
+    <?php print render($title_suffix); ?>
+
+    <?php if ($action_links): ?>
+    	<ul class="action-links">
+    		<?php print render($action_links); ?>
+    	</ul>
+    <?php endif; ?>
+
+    <?php print render($page['content']); ?>
   </div>
+  <!-- Main content area -->
 
-  <?php if ($page['footer']): ?>
-    <div class="row"><div class="twelve columns"><hr></div></div>
-
-    <div class="row">
-      <div class="twelve columns">
-  			<?php print render($page['footer']); ?>
-      </div>
+  <?php if ($page['right']): ?>
+    <div class="three columns">
+      <?php print render($page['right']); ?>
     </div>
-		<!-- Footer -->
+		<!-- Right sidebar -->
   <?php endif; ?>
 
 </div>
-<!-- Container -->
+
+<?php if ($page['footer']): ?>
+  <div class="row"><div class="twelve columns"><hr></div></div>
+
+  <div class="row">
+    <div class="twelve columns">
+			<?php print render($page['footer']); ?>
+    </div>
+  </div>
+	<!-- Footer -->
+<?php endif; ?>
