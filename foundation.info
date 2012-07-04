@@ -11,6 +11,7 @@ regions[right] = Right
 regions[footer] = Footer
 
 stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/app.css
 
 scripts[] = js/modernizr.foundation.js
 scripts[] = js/foundation.js
