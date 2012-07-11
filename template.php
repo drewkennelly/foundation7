@@ -1,7 +1,7 @@
 <?php
 
 	/*
-		Preprocess function to determine number of columns for main content area
+	Preprocess function to determine number of columns for main content area
 	*/
 	function foundation_preprocess_page(&$variables) {
 		if ( !empty($variables['page']['left']) && !empty($variables['page']['right']) )

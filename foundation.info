@@ -14,4 +14,9 @@ stylesheets[all][] = css/foundation.css
 stylesheets[all][] = css/app.css
 
 scripts[] = js/modernizr.foundation.js
-scripts[] = js/foundation.js
+scripts[] = js/jquery.reveal.js
+scripts[] = js/jquery.orbit-1.4.0.js
+scripts[] = js/jquery.customforms.js
+scripts[] = js/jquery.placeholder.min.js
+scripts[] = js/jquery.tooltips.js
+scripts[] = js/app.js
