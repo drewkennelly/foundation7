@@ -12,21 +12,8 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
-.calculator {
-  float:left;
-  margin-right:20px;
-}
 
-.panel {
-  padding:20px;
-}
 
-@media only screen and (max-width: 767px) {
-  .calculator {
-    float:none;
-    margin-right:0;
-  }
-}
 
 
 /* -----------------------------------------
