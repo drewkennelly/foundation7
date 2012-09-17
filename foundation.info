@@ -10,13 +10,9 @@ regions[left] = Left
 regions[right] = Right
 regions[footer] = Footer
 
-stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/app.css
 
-scripts[] = js/modernizr.foundation.js
-scripts[] = js/jquery.reveal.js
-scripts[] = js/jquery.orbit-1.4.0.js
-scripts[] = js/jquery.customforms.js
-scripts[] = js/jquery.placeholder.min.js
-scripts[] = js/jquery.tooltips.js
+scripts[] = js/jquery.js
+scripts[] = js/foundation.min.js
 scripts[] = js/app.js
