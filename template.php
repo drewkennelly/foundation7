@@ -13,21 +13,23 @@
 	}
 
 
+	
 	/**
 	* Overwrite theme_button()
 	*/
-	function foundation_button($element) {
+	function theme_button($variables) {
+		$element = $variables['element'];
+		$element['#attributes']['type'] = 'submit';
+		element_set_attributes($element, array('id', 'name', 'value'));
 
-	// Add some extra conditions to make sure we're only adding the classto the right submit button
-	if ($element['#id'] == 'edit-submit') {
-		// Now add our custom class
-		if (isset($element['#attributes']['class'])) {
-			$element['#attributes']['class'] .= ' button';
-		}
-		else {
-			$element['#attributes']['class'] = 'button';
-		}
-	}
+		$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 
-	return theme_button($element);
+		if (!empty($element['#attributes']['disabled'])) {
+			$element['#attributes']['class'][] = 'form-button-disabled';
+		}
+
+		//custom class
+		$element['#attributes']['class'][] = 'button';
+
+		return '<input' . drupal_attributes($element['#attributes']) . ' />';
 	}
