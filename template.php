@@ -30,6 +30,7 @@
 
 		//custom class
 		$element['#attributes']['class'][] = 'button';
+		$element['#attributes']['class'][] = 'small';
 
 		return '<input' . drupal_attributes($element['#attributes']) . ' />';
 	}
