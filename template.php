@@ -13,11 +13,11 @@
 	}
 
 
-	
+
 	/**
 	* Overwrite theme_button()
 	*/
-	function theme_button($variables) {
+	function foundation_button($variables) {
 		$element = $variables['element'];
 		$element['#attributes']['type'] = 'submit';
 		element_set_attributes($element, array('id', 'name', 'value'));
