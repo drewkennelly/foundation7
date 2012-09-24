@@ -4,31 +4,17 @@
   var $doc = $(document),
       Modernizr = window.Modernizr;
 
-  
   $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
-  $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
-  $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
-  $('input, textarea').placeholder();
-  
-  
   $.fn.foundationButtons          ? $doc.foundationButtons() : null;
-  
-  
+  $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
   $.fn.foundationNavigation       ? $doc.foundationNavigation() : null;
-  
-  
-  $.fn.foundationTopBar           ? $doc.foundationTopBar({breakPoint: 940}) : null;
-  
-  
+  $.fn.foundationTopBar           ? $doc.foundationTopBar() : null;
+  $.fn.foundationCustomForms      ? $doc.foundationCustomForms() : null;
   $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
-  
-    
-    $.fn.foundationTabs             ? $doc.foundationTabs() : null;
-    
-  
-  
-    $("#featured").orbit();
-  
+  $.fn.foundationTabs             ? $doc.foundationTabs({callback : $.foundation.customForms.appendCustomMarkup}) : null;
+  $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
+
+  $('input, textarea').placeholder();
 
   // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
   // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
