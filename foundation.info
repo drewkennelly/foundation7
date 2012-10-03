@@ -13,6 +13,5 @@ regions[footer] = Footer
 stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/app.css
 
-scripts[] = js/jquery-1.8.2.min.js
 scripts[] = js/foundation.min.js
 scripts[] = js/app.js
