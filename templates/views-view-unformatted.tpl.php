@@ -29,7 +29,7 @@
       $endClass = '';
   ?>
 
-  <div class="three columns mobile-two <?php print $endClass; ?>">
+  <div class="three columns th<?php print $endClass; ?>">
      <?php print $row; ?>
   </div>
 
