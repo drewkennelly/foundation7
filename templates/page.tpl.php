@@ -75,14 +75,6 @@
 
 <div class="row">
   <div class="twelve columns">
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav-bar')))); ?>
-  </div>
-</div>
-<!-- Main Navigation -->
-
-
-<div class="row">
-  <div class="twelve columns">
     <?php if ($is_front): ?>
       <h1><?php print $site_name; ?></h1>
       <h4 class="subheader"><?php print $site_slogan; ?></h4>
@@ -93,6 +85,14 @@
   </div>
 </div>
 <!-- Header -->
+
+
+<div class="row">
+  <div class="twelve columns">
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav-bar')))); ?>
+  </div>
+</div>
+<!-- Main Navigation -->
 
 
 <div class="row">
