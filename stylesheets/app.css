@@ -4257,3 +4257,10 @@ ul.primary {
   border-bottom: none;
   margin: 0;
   padding: 0; }
+
+ul.primary li a {
+  background-color: #ddd;
+  border-color: #e6e6e6;
+  border-style: none;
+  margin-right: 0;
+  padding: 0px 23.8px; }
