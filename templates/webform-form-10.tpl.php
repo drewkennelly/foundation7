@@ -28,7 +28,7 @@
 	</div>
 </div>
 
-<div class-"row">
+<div class="row">
 	<div class="twelve columns">
 		<?php print drupal_render($form['submitted']['message']); ?>
 	</div>
