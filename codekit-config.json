@@ -37,17 +37,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/javascripts\/foundation\/jquery.foundation.topbar.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.topbar.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.topbar.min.js",
-      "fileType" : 64
-    },
     "\/javascripts\/foundation\/modernizr.foundation.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -57,6 +46,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/javascripts\/foundation\/modernizr.foundation.min.js",
+      "fileType" : 64
+    },
+    "\/javascripts\/foundation\/jquery.foundation.topbar.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.topbar.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.topbar.min.js",
       "fileType" : 64
     },
     "\/images\/foundation\/orbit\/left-arrow.png" : {
