@@ -73,8 +73,11 @@
  */
 ?>
 
-
-<?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav-bar')))); ?>
+<div class="row">
+  <div class="twelve columns">
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav-bar')))); ?>
+  </div>
+</div>
 <!-- Main Navigation -->
 
 
