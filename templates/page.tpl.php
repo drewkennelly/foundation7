@@ -117,8 +117,8 @@
 
     <?php print $messages; ?>
 
-		<?php if ($tabs): ?>
-    	<div class="tabs pill"><?php print render($tabs); ?></div>
+		<?php if ($tabs = render($tabs)): ?>
+    	<div class="tabs pill"><?php print $tabs; ?></div>
     <?php endif; ?>
 
     <?php print render($title_prefix); ?>

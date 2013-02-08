@@ -16,9 +16,9 @@
 
 	<?php 
     if ($id == 0)
-      print '<div class="row entryRow">';
+      print '<div class="row">';
     elseif ($id % 4 == 0) {
-      print '</div><div class="row entryRow">';
+      print '</div><div class="row">';
     } 
   ?>
 
