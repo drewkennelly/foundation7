@@ -96,14 +96,6 @@
 
 
 <div class="row">
-  <div class="twelve columns">
-    <?php print $breadcrumb; ?>
-  </div>
-</div>
-<!-- Breadcrumbs -->
-
-
-<div class="row">
 
 	<?php if ($page['left']): ?>
     <div class="three columns">
