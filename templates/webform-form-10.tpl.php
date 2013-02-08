@@ -17,14 +17,25 @@
  * - $form['details']: Internal information stored by Webform.
  */
 ?>
+
+
+<div class="row">
+	<div class="six columns">
+		<?php print drupal_render($form['submitted']['name']); ?>
+	</div>
+	<div class="six columns">
+		<?php print drupal_render($form['submitted']['email']); ?>
+	</div>
+</div>
+
+<div class-"row">
+	<div class="twelve columns">
+		<?php print drupal_render($form['submitted']['message']); ?>
+	</div>
+</div>
+
+
 <?php
-
-	dpm($form);
-
-
-  // Print out the main part of the form.
-  // Feel free to break this up and move the pieces within the array.
-  print drupal_render($form['submitted']);
 
   // Always print out the entire $form. This renders the remaining pieces of the
   // form that haven't yet been rendered above.
