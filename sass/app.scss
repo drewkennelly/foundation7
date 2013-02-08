@@ -50,20 +50,32 @@
 // @import "foundation/components/modules/mqueries";
 
 
+
+
+// Drupal Overrides
 ul.primary {
   border-bottom: none;
   margin:0;
   padding:0;
+
+  li {
+
+  	a {
+
+  		background-color: #ddd;
+			border-color: #e6e6e6;
+			border-style: none;
+			margin-right: 0;
+			padding: 0px 23.8px;
+
+  	}
+
+  }
+
 }
 
-ul.primary li a {
-	background-color: #ddd;
-	border-color: #e6e6e6;
-	border-style: none;
-	margin-right: 0;
-	padding: 0px 23.8px;
-}
 
-.alert-box ul {
+.alert-box ul,
+.alert-box p {
 	margin-bottom:0
 }
