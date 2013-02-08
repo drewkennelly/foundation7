@@ -52,3 +52,55 @@
 			return $output;
 		}
 	}
+
+
+
+	/**
+	*	Override theme_status_messages()
+	**/
+	function foundation_status_messages($variables) {
+	  $display = $variables['display'];
+	  $output = '';
+
+	  $status_heading = array(
+	    'status' => t('Status message'), 
+	    'error' => t('Error message'), 
+	    'warning' => t('Warning message'),
+	  );
+	  foreach (drupal_get_messages($display) as $type => $messages) {
+
+	  	//convert to foundation classes
+	  	switch ( $type ) {
+
+	  		case 'error': $type = 'alert';
+	  		break;
+
+	  		case 'status': $type = 'success';
+	  		break;
+
+	  		case 'warning': $type = 'secondary';
+	  		break;
+
+	  	}
+
+
+	    $output .= "<div class=\"alert-box $type\">\n";
+	    if (!empty($status_heading[$type])) {
+	      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
+	    }
+	    if (count($messages) > 1) {
+	      $output .= " <ul>\n";
+	      foreach ($messages as $message) {
+	        $output .= '  <li>' . $message . "</li>\n";
+	      }
+	      $output .= " </ul>\n";
+	    }
+	    else {
+	      $output .= $messages[0];
+	    }
+	    $output .= "</div>\n";
+	  }
+	  return $output;
+	}
+
+?>
