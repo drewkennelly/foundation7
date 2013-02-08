@@ -46,9 +46,9 @@
 		if (!empty($breadcrumb)) {
 			$output = '<ul class="breadcrumbs">';
 			foreach($breadcrumb as $value) {
-				$crumbs .= '<li>'.$value.'</li>';
+				$output .= '<li>'.$value.'</li>';
 			}
-			$crumbs .= '</ul>';
-			return $crumbs;
+			$output .= '</ul>';
+			return $output;
 		}
 	}
