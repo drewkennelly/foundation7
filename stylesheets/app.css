@@ -4253,3 +4253,11 @@ table.hide-for-medium {
 
   .top-bar ul > li.has-button a.button {
     margin: 0; } }
+
+
+
+ul.primary {
+  border-bottom: none;
+  margin:0;
+  padding:0;
+}
