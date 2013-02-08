@@ -37,17 +37,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/javascripts\/foundation\/modernizr.foundation.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/foundation\/modernizr.foundation.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/foundation\/modernizr.foundation.min.js",
-      "fileType" : 64
-    },
     "\/javascripts\/foundation\/jquery.foundation.topbar.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -57,6 +46,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.topbar.min.js",
+      "fileType" : 64
+    },
+    "\/javascripts\/foundation\/modernizr.foundation.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/foundation\/modernizr.foundation.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/foundation\/modernizr.foundation.min.js",
       "fileType" : 64
     },
     "\/images\/foundation\/orbit\/left-arrow.png" : {
@@ -566,6 +566,15 @@
       "outputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.clearing.min.min.js",
       "fileType" : 64
     },
+    "\/templates\/html.tpl.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/templates\/html.tpl.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/javascripts\/foundation\/jquery.foundation.orbit.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -576,15 +585,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/javascripts\/foundation\/jquery.foundation.orbit.min.js",
       "fileType" : 64
-    },
-    "\/templates\/html.tpl.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/templates\/html.tpl.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
