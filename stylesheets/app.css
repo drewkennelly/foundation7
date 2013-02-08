@@ -4264,3 +4264,6 @@ ul.primary li a {
   border-style: none;
   margin-right: 0;
   padding: 0px 23.8px; }
+
+.alert-box ul {
+  margin-bottom: 0; }
