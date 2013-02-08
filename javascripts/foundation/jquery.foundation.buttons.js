@@ -3,10 +3,10 @@
 
   $.fn.foundationButtons = function (options) {
     var $doc = $(document),
-      config = $.extend({
-        dropdownAsToggle:false,
-        activeClass:'active'
-      }, options),
+        config = $.extend({
+          dropdownAsToggle:false,
+          activeClass:'active'
+        }, options),
 
     // close all dropdowns except for the dropdown passed
       closeDropdowns = function (dropdown) {
@@ -30,17 +30,17 @@
     // reset other active states
     $doc.on('click.fndtn', '.button.dropdown:not(.split), .button.dropdown.split span', function (e) {
       var $el = $(this),
-        button = $el.closest('.button.dropdown'),
-        dropdown = $('> ul', button);
-
-        // If the click is registered on an actual link then do not preventDefault which stops the browser from following the link
-        if (e.target.nodeName !== "A"){
+          button = $el.closest('.button.dropdown'),
+          dropdown = $('> ul', button);
+          
+        // If the click is registered on an actual link or on button element then do not preventDefault which stops the browser from following the link
+        if ($.inArray(e.target.nodeName, ['A', 'BUTTON'])){
           e.preventDefault();
         }
 
       // close other dropdowns
       setTimeout(function () {
-        closeDropdowns(config.dropdownAsToggle ? dropdown : '');
+        closeDropdowns(config.dropdownAsToggle ? '' : dropdown);
         dropdown.toggleClass('show-dropdown');
 
         if (config.dropdownAsToggle) {

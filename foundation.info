@@ -1,5 +1,5 @@
 name = Foundation
-description = Base theme for Drupal 7 built using Foundation 3.2.3 by ZURB
+description = Base theme for Drupal 7 built using Foundation 3.2.5 by ZURB
 core = 7.x
 engine = phptemplate
 
@@ -12,4 +12,21 @@ regions[footer] = Footer
 
 stylesheets[all][] = stylesheets/app.css
 
-scripts[] = javascripts/foundation/app.min.js
+scripts[] = javascripts/modernizr.foundation.js
+scripts[] = javascripts/jquery.js
+scripts[] = javascripts/jquery.foundation.mediaQueryToggle.js
+scripts[] = javascripts/jquery.foundation.forms.js
+scripts[] = javascripts/jquery.foundation.reveal.js
+scripts[] = javascripts/jquery.foundation.orbit.js
+scripts[] = javascripts/jquery.foundation.navigation.js
+scripts[] = javascripts/jquery.foundation.buttons.js
+scripts[] = javascripts/jquery.foundation.tabs.js
+scripts[] = javascripts/jquery.foundation.tooltips.js
+scripts[] = javascripts/jquery.foundation.accordion.js
+scripts[] = javascripts/jquery.placeholder.js
+scripts[] = javascripts/jquery.foundation.alerts.js
+scripts[] = javascripts/jquery.foundation.topbar.js
+scripts[] = javascripts/jquery.foundation.joyride.js
+scripts[] = javascripts/jquery.foundation.clearing.js
+scripts[] = javascripts/jquery.foundation.magellan.js
+scripts[] = javascripts/foundation/app.js
