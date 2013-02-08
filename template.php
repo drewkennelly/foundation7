@@ -39,7 +39,7 @@
 
 
 	/**
-	*
+	* Override theme_breadcrumb()
 	**/
 	function foundation_breadcrumb($variables) {
 	  $breadcrumb = $variables['breadcrumb'];
