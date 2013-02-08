@@ -9,6 +9,7 @@ This version uses SCSS and Compass.
 Regions
 ============================
 
+* Topbar
 * Header
 * Navigation
 * Left
@@ -20,22 +21,20 @@ Regions
 Scripts
 ============================
 
-* Cookie
-* Move
-* Swipe
-* Accordion
-* Alerts
-* Buttons
-* Clearing
-* Forms
-* Joyride
-* Magellan
+* Modernizr
+* jQuery
 * mediaQueryToggle
-* Navigation
-* Orbit
+* Forms
 * Reveal
+* Orbit
+* Navigation
+* Buttons
 * Tabs
 * Tooltips
-* Topbar
+* Accordion
 * Placeholder
-* Modernizr
+* Alerts
+* Topbar
+* Joyride
+* Clearing
+* Magellan
