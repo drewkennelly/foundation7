@@ -5,6 +5,8 @@ This is a Drupal 7 theme built using Foundation 3.2.3 by Zurb - http://foundatio
 
 This version uses SCSS and Compass.
 
+Please visit the Zurb Foundation drupal project for the latest developments: http://drupal.org/project/zurb-foundation
+
 
 Regions
 ============================
