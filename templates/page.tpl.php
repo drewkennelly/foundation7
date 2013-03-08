@@ -73,32 +73,27 @@
  */
 ?>
 
-<div class="row">
-  <div class="twelve columns">
-    <?php if ($is_front): ?>
-      <h1><?php print $site_name; ?></h1>
-      <h4 class="subheader"><?php print $site_slogan; ?></h4>
-    <?php else: ?>
-      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
-      <h4 class="subheader"><?php print $site_slogan; ?></h4>
-    <?php endif; ?>
-  </div>
-</div>
-<!-- Header -->
-
-
-<div class="row">
-  <div class="twelve columns">
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav-bar')))); ?>
-  </div>
-</div>
-<!-- Main Navigation -->
+<nav class="top-bar">
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?> <small><?php print $site_slogan; ?></small></a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('right')))); ?>
+  </section>
+</nav>
+<!-- Top Bar -->
 
 
 <div class="row">
 
 	<?php if ($page['left']): ?>
-    <div class="three columns">
+    <div class="large-3 columns">
       <?php print render($page['left']); ?>
     </div>
 		<!-- Left sidebar -->
@@ -110,11 +105,13 @@
     <?php print $messages; ?>
 
 		<?php if ($tabs = render($tabs)): ?>
-    	<div class="tabs pill"><?php print $tabs; ?></div>
+    	<dl class="sub-nav">
+        <?php print $tabs; ?>
+      </dl>
     <?php endif; ?>
 
     <?php print render($title_prefix); ?>
-    <h2><?php print $title; ?></h2>
+    <h3><?php print $title; ?></h3>
     <?php print render($title_suffix); ?>
 
     <?php if ($action_links): ?>
@@ -138,9 +135,9 @@
 
 
 <?php if ($page['footer']): ?>
-  <div class="row"><div class="twelve columns"><hr></div></div>
+  <div class="row"><div class="large-12 columns"><hr></div></div>
   <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
 			<?php print render($page['footer']); ?>
     </div>
   </div>

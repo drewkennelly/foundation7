@@ -1,0 +1,58 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+ul.primary {
+  border-bottom: none;
+  margin:0;
+  padding:0;
+}
+
+ul.primary li a {
+  background-color: #ddd;
+  border-color: #e6e6e6;
+  border-style: none;
+  margin-right: 0;
+  padding: 0px 23.8px;
+}
+
+.alert-box ul,
+.alert-box p {
+  margin-bottom:0
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#444;
+}
+
+.header h1 {
+  margin-bottom:0;
+}
+
+.header h2 {
+  font-size: 22px;
+  margin-top:7px;
+}
+
+body {
+  background-color:#eaeaea;
+}
+
+.row {
+  background-color:#ffffff;
+}
+
+.panel ul {
+  list-style-position: inside;
+}
+
+h6 {
+  margin-bottom: 0px;
+  margin-top: 7px;
+}
+
+.project p {
+  color:#999;
+}
