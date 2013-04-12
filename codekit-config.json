@@ -143,16 +143,14 @@
       "initialSize" : 3242,
       "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.alerts.min.js" : {
+    "\/templates\/region.tpl.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.alerts.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.alerts.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/templates\/region.tpl.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/vendor\/custom.modernizr.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -165,14 +163,16 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/custom.modernizr.min.min.js",
       "fileType" : 64
     },
-    "\/templates\/region.tpl.php" : {
+    "\/js\/foundation\/foundation.alerts.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/templates\/region.tpl.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.alerts.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.alerts.min.min.js",
+      "fileType" : 64
     },
     "\/images\/foundation\/orbit\/right-arrow-small.png" : {
       "ignoreWasSetByUser" : 0,
@@ -253,17 +253,6 @@
       "initialSize" : 536,
       "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.section.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.min.js",
-      "fileType" : 64
-    },
     "\/screenshot.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -285,6 +274,17 @@
       "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/left-arrow-small.png",
       "initialSize" : 3163,
       "fileType" : 8192
+    },
+    "\/js\/foundation\/foundation.section.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.min.js",
+      "fileType" : 64
     },
     "\/js\/vendor\/zepto.min.js" : {
       "ignoreWasSetByUser" : 0,
