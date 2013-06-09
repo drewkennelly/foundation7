@@ -2,25 +2,28 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/images\/foundation\/orbit\/mask-black.png" : {
+    "\/scss\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/foundation\/orbit\/mask-black.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/mask-black.png",
-      "initialSize" : 526,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/scss\/_normalize.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
-    "\/templates\/region.tpl.php" : {
+    "\/js\/foundation\/foundation.section.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/templates\/region.tpl.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.section.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.js",
+      "fileType" : 64
     },
     "\/images\/foundation\/orbit\/right-arrow-small.png" : {
       "ignoreWasSetByUser" : 0,
@@ -33,16 +36,14 @@
       "initialSize" : 3169,
       "fileType" : 8192
     },
-    "\/images\/foundation\/orbit\/bullets.jpg" : {
+    "\/templates\/region.tpl.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/foundation\/orbit\/bullets.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/bullets.jpg",
-      "initialSize" : 657,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/templates\/region.tpl.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/app.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -55,16 +56,16 @@
       "outputAbbreviatedPath" : "\/js\/app.min.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.topbar.js" : {
+    "\/images\/foundation\/orbit\/mask-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.topbar.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.topbar.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/images\/foundation\/orbit\/mask-black.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/mask-black.png",
+      "initialSize" : 526,
+      "fileType" : 8192
     },
     "\/js\/foundation\/foundation.joyride.js" : {
       "ignoreWasSetByUser" : 0,
@@ -99,6 +100,17 @@
       "outputAbbreviatedPath" : "\/js\/foundation\/foundation.reveal.min.js",
       "fileType" : 64
     },
+    "\/js\/vendor\/jquery.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.min.js",
+      "fileType" : 64
+    },
     "\/scss\/app.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -111,29 +123,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_normalize.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/js\/vendor\/jquery.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.min.js",
-      "fileType" : 64
-    },
     "\/images\/foundation\/orbit\/right-arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -144,6 +133,17 @@
       "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/right-arrow.png",
       "initialSize" : 3242,
       "fileType" : 8192
+    },
+    "\/images\/foundation\/orbit\/bullets.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/foundation\/orbit\/bullets.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/bullets.jpg",
+      "initialSize" : 657,
+      "fileType" : 4096
     },
     "\/js\/foundation\/foundation.dropdown.js" : {
       "ignoreWasSetByUser" : 0,
@@ -303,17 +303,6 @@
       "initialSize" : 288,
       "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.forms.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.forms.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.forms.min.js",
-      "fileType" : 64
-    },
     "\/images\/foundation\/orbit\/timer-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -324,6 +313,17 @@
       "outputAbbreviatedPath" : "\/images\/foundation\/orbit\/timer-black.png",
       "initialSize" : 526,
       "fileType" : 8192
+    },
+    "\/js\/foundation\/foundation.forms.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.forms.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.forms.min.js",
+      "fileType" : 64
     },
     "\/js\/app.js" : {
       "ignoreWasSetByUser" : 0,
@@ -369,6 +369,17 @@
       "outputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.min.js",
       "fileType" : 64
     },
+    "\/js\/foundation\/foundation.placeholder.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.min.js",
+      "fileType" : 64
+    },
     "\/js\/foundation\/foundation.magellan.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -380,15 +391,15 @@
       "outputAbbreviatedPath" : "\/js\/foundation\/foundation.magellan.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.placeholder.js" : {
+    "\/js\/foundation\/foundation.topbar.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.topbar.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.min.js",
+      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.topbar.min.js",
       "fileType" : 64
     },
     "\/screenshot.png" : {
@@ -401,17 +412,6 @@
       "outputAbbreviatedPath" : "\/screenshot.png",
       "initialSize" : 40418,
       "fileType" : 8192
-    },
-    "\/js\/foundation\/foundation.section.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.section.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/foundation\/foundation.section.min.js",
-      "fileType" : 64
     },
     "\/templates\/page.tpl.php" : {
       "ignoreWasSetByUser" : 0,
