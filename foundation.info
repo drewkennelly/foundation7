@@ -8,17 +8,18 @@ regions[left] = Left
 regions[right] = Right
 regions[footer] = Footer
 
-stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/app.css
 
 scripts[] = js/vendor/custom.modernizr.min.js
 scripts[] = js/vendor/jquery.min.js
 scripts[] = js/foundation/foundation.min.js
+scripts[] = js/foundation/foundation.abide.min.js
 scripts[] = js/foundation/foundation.alerts.min.js
 scripts[] = js/foundation/foundation.clearing.min.js
 scripts[] = js/foundation/foundation.cookie.min.js
 scripts[] = js/foundation/foundation.dropdown.min.js
 scripts[] = js/foundation/foundation.forms.min.js
+scripts[] = js/foundation/foundation.interchange.min.js
 scripts[] = js/foundation/foundation.joyride.min.js
 scripts[] = js/foundation/foundation.magellan.min.js
 scripts[] = js/foundation/foundation.orbit.min.js
