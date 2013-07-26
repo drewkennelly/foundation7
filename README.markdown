@@ -5,7 +5,7 @@ This is a Drupal 7 theme built using Foundation 4.3.1
 
 
 Drupal Regions
-============================
+----------------------------
 
 * Topbar
 * Left
@@ -15,7 +15,7 @@ Drupal Regions
 
 
 Drupal Function Overrides
-============================
+----------------------------
 
 * template_preprocess_page()
 * theme_button()
@@ -25,7 +25,7 @@ Drupal Function Overrides
 
 
 Foundation Scripts
-============================
+----------------------------
 
 * Modernizr
 * jQuery
@@ -47,7 +47,7 @@ Foundation Scripts
 
 
 CSS
-============================
+----------------------------
 
 * Compass
 * Foundation
