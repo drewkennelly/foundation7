@@ -1,13 +1,7 @@
 ZURB Foundation theme for Drupal 7
 ============================
 
-This is a Drupal 7 theme built using Foundation 4 by Zurb - http://foundation.zurb.com
-
-This version uses SCSS and Compass and Normalize.
-
-I have not used the conditional jQuery/Zepto script in this theme as I am not sure of the support for zepto in Drupal and need to test it some more first.
-
-Please visit the Zurb Foundation drupal project for the latest developments: http://drupal.org/project/zurb-foundation
+This is a Drupal 7 theme built using Foundation 4.3.1 by Zurb - http://foundation.zurb.com
 
 
 Regions
@@ -25,11 +19,13 @@ Scripts
 
 * Modernizr
 * jQuery
+* Abide
 * Alerts
 * Clearing
 * Cookie
 * Dropdown
 * Forms
+* Interchange
 * Joyride
 * Megellan
 * Orbit
