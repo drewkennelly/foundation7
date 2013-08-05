@@ -125,7 +125,7 @@
   <!-- Main content area -->
 
   <?php if ($page['right']): ?>
-    <div class="three columns">
+    <div class="large-3 columns">
       <?php print render($page['right']); ?>
     </div>
 		<!-- Right sidebar -->
