@@ -1,5 +1,5 @@
 name = Foundation
-description = Base theme for Drupal 7 built using Foundation 4 by ZURB
+description = Base theme for Drupal 7 built using Foundation 5 by ZURB
 core = 7.x
 engine = phptemplate
 
@@ -8,24 +8,8 @@ regions[left] = Left
 regions[right] = Right
 regions[footer] = Footer
 
-stylesheets[all][] = css/app.css
+stylesheets[all][] = css/foundation.min.css
 
-scripts[] = js/vendor/custom.modernizr.min.js
-scripts[] = js/vendor/jquery.min.js
-scripts[] = js/foundation/foundation.min.js
-scripts[] = js/foundation/foundation.abide.min.js
-scripts[] = js/foundation/foundation.alerts.min.js
-scripts[] = js/foundation/foundation.clearing.min.js
-scripts[] = js/foundation/foundation.cookie.min.js
-scripts[] = js/foundation/foundation.dropdown.min.js
-scripts[] = js/foundation/foundation.forms.min.js
-scripts[] = js/foundation/foundation.interchange.min.js
-scripts[] = js/foundation/foundation.joyride.min.js
-scripts[] = js/foundation/foundation.magellan.min.js
-scripts[] = js/foundation/foundation.orbit.min.js
-scripts[] = js/foundation/foundation.placeholder.min.js
-scripts[] = js/foundation/foundation.reveal.min.js
-scripts[] = js/foundation/foundation.section.min.js
-scripts[] = js/foundation/foundation.tooltips.min.js
-scripts[] = js/foundation/foundation.topbar.min.js
-scripts[] = js/app.min.js
+scripts[] = js/vendor/modernizr.js
+scripts[] = js/vendor/jquery.js
+scripts[] = js/foundation.min.js
