@@ -58,6 +58,5 @@ Foundation Scripts
 CSS
 ----------------------------
 
-* Compass
 * Foundation
 * Normalize
