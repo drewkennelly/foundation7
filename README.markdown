@@ -1,7 +1,7 @@
 ZURB Foundation theme for Drupal 7
 ============================
 
-This is a Drupal 7 theme built using Foundation 4.3.1
+This is a Drupal 7 theme built using Foundation 5
 
 
 Drupal Regions
@@ -27,23 +27,32 @@ Drupal Function Overrides
 Foundation Scripts
 ----------------------------
 
-* Modernizr
-* jQuery
 * Abide
-* Alerts
+* Accordion
+* Alert
 * Clearing
-* Cookie
 * Dropdown
-* Forms
+* Equalizer
 * Interchange
 * Joyride
-* Megellan
+* Magellan
+* Offcanvas
 * Orbit
-* Placeholder
 * Reveal
-* Section
-* Tooltips
+* Slider
+* Tab
+* Tooltip
 * Topbar
+
+
+3rd Party Scripts
+----------------------------
+
+* Fastclick
+* jQuery Cookie
+* jQuery
+* Modernizr
+* Placeholder
 
 
 CSS
@@ -52,5 +61,3 @@ CSS
 * Compass
 * Foundation
 * Normalize
-
-
