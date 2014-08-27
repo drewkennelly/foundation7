@@ -6,9 +6,12 @@
   <title><?php echo $head_title; ?></title>
   <?php echo $styles; ?>
   <?php echo $scripts; ?>
+  <script>
+    $(document).foundation();
+  </script>
 </head>
 <body <?php print $attributes;?>>
-	<?php print $page_top; ?>
+  <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
