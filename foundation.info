@@ -1,5 +1,5 @@
 name = Foundation
-description = Base theme for Drupal 7 built using Foundation 5 by ZURB
+description = Base theme for Drupal 7 built using Foundation 6 by ZURB
 core = 7.x
 engine = phptemplate
 
@@ -10,6 +10,6 @@ regions[footer] = Footer
 
 stylesheets[all][] = css/foundation.min.css
 
-scripts[] = js/vendor/modernizr.js
-scripts[] = js/vendor/jquery.js
+scripts[] = js/vendor/jquery.min.js
+scripts[] = js/vendor/what-input.min.js
 scripts[] = js/foundation.min.js
