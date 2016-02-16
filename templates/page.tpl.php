@@ -73,20 +73,16 @@
  */
 ?>
 
-<nav class="top-bar">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><a href="<?php print $front_page; ?>"><?php print $site_name; ?> <small><?php print $site_slogan; ?></small></a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('right')))); ?>
-  </section>
-</nav>
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu')))); ?>
+  </div>
+</div>
 <!-- Top Bar -->
 
 

@@ -8,8 +8,9 @@ regions[left] = Left
 regions[right] = Right
 regions[footer] = Footer
 
-stylesheets[all][] = css/foundation.min.css
+stylesheets[all][] = css/foundation.css
+stylesheets[all][] = css/app.css
 
 scripts[] = js/vendor/jquery.min.js
-scripts[] = js/vendor/what-input.min.js
-scripts[] = js/foundation.min.js
+scripts[] = js/foundation.js
+scripts[] = js/app.js
